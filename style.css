@@ -28,6 +28,7 @@ input {
     border-radius: 5px;
     box-sizing: border-box;
     border: 1px solid gray;
+    font-size: 1em;
 }
 
 .judul{
