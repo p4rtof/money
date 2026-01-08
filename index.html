@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaji Karyawan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="judul">Hitung Gaji Karyawan</h2>
+        <div class=" elemen nama">
+            <label for="nama">Nama Karyawan : </label> <br>
+            <input type="text" name="nama" id="nama">
+        </div>
+
+        <div class="elemen gajiHarian">
+            <label for="gajiHarian">Gaji Harian (Rp): </label> <br>
+            <input type="text" onkeyup="formatUang(this)" name="gajiHarian" id="gajiHarian">
+        </div>
+
+        <div class="elemen jumlahHariMasuk">
+            <label for="jumlahHariMasuk">Jumlah Hari Masuk : </label> <br>
+            <input type="number"  name="jumlahHariMasuk" id="jumlahHariMasuk">
+        </div>
+
+        <div class="elemen lembur">
+            <label for="lembur"> Lembur berapa hari :</label> <br>
+            <input type="number" name="lembur" id="lembur">
+        </div>
+
+        <div class="elemen hutang">
+            <label for="hutang"> Hutang (Rp) : </label> <br>
+            <input type="text" onkeyup="formatUang(this)" name="hutang" id="hutang">
+        </div>
+
+        <button class="hitung-gaji" id="hitung-gaji">
+            HITUNG GAJI
+        </button>
+
+
+
+        <div class="totalGaji">
+            <label id="totalGajiBersih"> Total Gaji Bersih</label><br>
+            <span id="totalGajiFix">Rp. 0</span>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
