@@ -12,11 +12,11 @@ document.getElementById('hitung-gaji').onclick = function() {
 
     let gajiHarian = ambilAngka('gajiHarian');
     let hutang = ambilAngka('hutang');
+    let bonus = ambilAngka('bonus');
     let jumlahHariMasuk = Number(document.getElementById('jumlahHariMasuk').value) || 0;
-    let lembur = Number(document.getElementById('lembur').value) || 0;
 
-    let totalLembur = lembur * 100000;
-    let totalGajiFix = (gajiHarian * jumlahHariMasuk) + totalLembur - hutang;
+    // let totalbonus = bonus * 100000;
+    let totalGajiFix = (gajiHarian * jumlahHariMasuk) + bonus - hutang;
 
     console.log("Gaji Harian:", gajiHarian); // Cek di console
     console.log("Total:", totalGajiFix);
