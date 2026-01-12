@@ -4,10 +4,11 @@
     font-size: 1em;
     background-color: white;
     margin: 5% auto;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     border-radius: 20px;
     width: 75%;
     max-width: 300px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 
 .elemen {
